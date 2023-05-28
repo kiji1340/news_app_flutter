@@ -10,5 +10,5 @@ const String kApiKey = "";
 ```
 2 values in file strings.dart(lib/src/utils/constants/strings.dart) and done
 
-![](https://github.com/kiji1340/clean_architecture_flutter/blob/main/gif/ezgif-4-0e6276ed72.gif)
+![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/ezgif-4-0e6276ed72.gif)
 
