@@ -1,6 +1,26 @@
-# clean_architecture_flutter
+# News App Flutter
 
-Clean_architecture_flutter is a Flutter project example that is based on Clean Architecture. (I learned from this [article](https://devmuaz.medium.com/flutter-clean-architecture-series-part-1-d2d4c2e75c47))
+news_app_flutter is a Flutter project example that is based on Clean Architecture.
+## Project Structure
+## Libraries
+
+| Library | Description |
+| --- | --- |
+| retrofit | is library that works with **REST API**, it’s inspired by the Android Retrofit. |
+| floor | is libaray that works with **SQLite** and its structure like **Android ROOM** |
+| equatable | helps to compare Dart object|
+| get_it | is a simple service locator |
+| flutter_hooks | helps to manage the life-cycle of a widget |
+| auto_route | use it instead of default Navigator |
+| lint | helps to write clean code |
+| flutter_bloc | helps to manage state |
+
+
+## Unit Test
+| Library | Description |
+| --- | --- |
+| mockito | helps to mock data object|
+| bloc_test | helps to test bloc |
 
 ## How to run
 
