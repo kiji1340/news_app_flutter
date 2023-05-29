@@ -109,3 +109,6 @@ const String kApiKey = "";
 
 ![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/ezgif-4-0e6276ed72.gif)
 
+## I learned from where
+
+I learn clean architecture from this [article]([https://newsapi.org/docs/get-started](https://devmuaz.medium.com/flutter-clean-architecture-series-part-1-d2d4c2e75c47))
