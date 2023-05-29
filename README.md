@@ -2,6 +2,18 @@
 
 news_app_flutter is a Flutter project example that is based on Clean Architecture.
 ## Project Structure
+![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/project_structure.png)
+
+the ***config*** includes the configaruation about the app.
+
+the ***utils*** contains constants, extensions, resources...
+
+the ***data*** layer is in charge of combining 1 or multiple data source. The most common are Memory, Cache, and Remote.
+
+the ***domain*** layer, which is the most important layer, contains the core business logic.
+
+the ***presentation*** is a layer responsible for handling the user interface and user interaction.
+
 ## Libraries
 
 | Library | Description |
