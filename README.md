@@ -111,4 +111,4 @@ const String kApiKey = "";
 
 ## I learned from where
 
-I learn clean architecture from this [article](https://devmuaz.medium.com/flutter-clean-architecture-series-part-1-d2d4c2e75c47)
+I learned clean architecture from this [article](https://devmuaz.medium.com/flutter-clean-architecture-series-part-1-d2d4c2e75c47)
