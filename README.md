@@ -19,6 +19,7 @@ the ***presentation*** is a layer responsible for handling the user interface an
 
 
 like a diagram describes:
+
 The ***Presentation*** layer, I use bloc that helps manage state and event from UI and it only communicates with the ***Domain*** layer via Repositories.
 
 The ***Domain*** layer just gets and sends data via repositories of the ***Data*** layer.
@@ -44,6 +45,51 @@ The ***Data*** layer, it can has many ways to handle data but it does not effect
 | --- | --- |
 | mockito | helps to mock data object|
 | bloc_test | helps to test bloc |
+
+I use Mockito to test the ***Domain*** and ***Data***
+
+here is example
+
+```dart
+      when(api.getBreakingNewsArticles(
+        apiKey: request.apiKey,
+        country: request.country,
+        category: request.category,
+        page: request.page,
+        pageSize: request.pageSize,
+      )).thenAnswer((_) async => HttpResponse<BreakingNewsResponse>(
+          response,
+          Response(
+            data: 'response json',
+            statusCode: HttpStatus.unauthorized,
+            requestOptions: RequestOptions(path: ''),
+          )));
+      final result =
+      await apiRepositoryImpl.getBreakingNewsArticles(request: request);
+      expect(result, isInstanceOf<DataFailed>());
+```
+
+and use bloc_test to test the ***Presentation***
+
+```dart
+    blocTest<RemoteArticlesCubit, RemoteArticlesState>(
+      "Test RemoteArticlesCubit success",
+      setUp: () {
+        when(apiRepository.getBreakingNewsArticles(request: request))
+            .thenAnswer((_) => Future.value(DataSuccess(response)));
+        cubit = RemoteArticlesCubit(apiRepository);
+      },
+      build: () {
+        return cubit;
+      },
+      act: (cubit) async {
+        cubit.getBreakingNewsArticles(request: request);
+      },
+      expect: () => [isInstanceOf<RemoteArticlesSuccess>()],
+    );
+```
+
+
 
 ## How to run
 
