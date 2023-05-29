@@ -4,7 +4,7 @@ news_app_flutter is a Flutter project example that is based on Clean Architectur
 ## Project Structure
 ![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/project_structure.png)
 
-the ***config*** includes the configaruation about the app.
+the ***config*** includes the configuration of the app.
 
 the ***utils*** contains constants, extensions, resources...
 
