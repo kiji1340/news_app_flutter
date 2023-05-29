@@ -1,6 +1,6 @@
 # News App Flutter
 
-news_app_flutter is a Flutter project example that is based on Clean Architecture.
+news_app_flutter is my Flutter project example that is based on Clean Architecture.
 ## Project Structure
 ![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/project_structure.png)
 
