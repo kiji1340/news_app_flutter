@@ -95,6 +95,12 @@ this is a result after the unit test but it has not been completed and I continu
 
 ## How to run
 
+First of all, let you command in your terminal to get all library.
+
+```
+flutter pub get
+```
+
 This project use [News API](https://newsapi.org/docs/get-started). If you don't have let's create a new one. After that, you add your key into 
 ```dart
 const String kApiKey = "";
