@@ -18,6 +18,12 @@ the ***presentation*** is a layer responsible for handling the user interface an
 ![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/clean_architect_structure.png)
 
 
+like a diagram describes:
+The ***Presentation*** layer, I use bloc that helps manage state and event from UI and it only communicates with the ***Domain*** layer via Repositories.
+
+The ***Domain*** layer just gets and sends data via repositories of the ***Data*** layer.
+
+The ***Data*** layer, it can has many ways to handle data but it does not effect to the Domain layer.
 
 ## Libraries
 
