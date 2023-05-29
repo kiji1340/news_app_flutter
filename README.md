@@ -14,6 +14,8 @@ the ***domain*** layer, which is the most important layer, contains the core bus
 
 the ***presentation*** is a layer responsible for handling the user interface and user interaction.
 
+![](https://github.com/kiji1340/news_app_flutter/blob/main/gif/clean_architecture_structure.png)
+
 ## Libraries
 
 | Library | Description |
